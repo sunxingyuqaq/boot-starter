@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author Xingyu Sun
- * @date 2020/4/13 15:10
+ * @date 2020/4/13 15:33
  */
 @SpringBootApplication
 public class DocsApplication {

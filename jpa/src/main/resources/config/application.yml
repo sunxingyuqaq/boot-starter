@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: jpa
+  datasource:
+    username: root
+    password: Gepoint
+    url: jdbc:mysql://localhost:3306/jpa?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  cache:
+    type: caffeine
+    caffeine:
+      spec: initialCapacity=10,maximumSize=500,expireAfterAccess=600s
+logging:
+  level:
+    com:
+      boot:
+        study:
+          jpa:
+            config: debug
+    root: info

@@ -1,0 +1,12 @@
+server:
+  port: 9080
+spring:
+  application:
+    name: docs
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+  thymeleaf:
+    cache: false
+    mode: HTML

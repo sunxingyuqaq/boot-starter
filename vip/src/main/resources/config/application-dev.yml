@@ -1,0 +1,7 @@
+spring:
+  sa-token:
+    token-name: token
+server:
+  port: 9090
+  servlet:
+    context-path: /vip

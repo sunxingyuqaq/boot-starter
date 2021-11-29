@@ -1,0 +1,12 @@
+elasticsearch:
+  enbale: false
+  host: 192.168.83.128
+  port: 9200
+  username: elastic
+  authentication-password: 123456
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password: 123456
